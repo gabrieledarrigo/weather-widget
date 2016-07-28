@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300");
+@import "owfont/css/owfont-regular";
+@import "variables";
+@import "components";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $gray_100;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}

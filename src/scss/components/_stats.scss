@@ -1,0 +1,23 @@
+.stats {
+    border: 1px solid $gray_300;
+    width: 100%;
+
+    &__row {
+        &:nth-child(2n + 1) {
+            background-color: rgba($blue_200, 0.2);
+        }
+    }
+
+    &__left,
+    &__right {
+        padding: 0.5rem;
+    }
+
+    &__left {
+        text-transform: uppercase;
+    }
+
+    &__right {
+        text-align: center;
+    }
+}

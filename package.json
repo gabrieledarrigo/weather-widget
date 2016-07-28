@@ -1,0 +1,25 @@
+{
+  "name": "wheater",
+  "version": "0.0.1",
+  "description": "A simple wheater widget application",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass src/scss/style.scss dist/style.css --output-style compressed --source-map dist/",
+    "watch": "npm run sass && node-sass src/scss/style.scss --watch --recursive --output dist/",
+    "copy": "copyfiles -f src/scss/owfont/fonts/** dist/fonts/",
+    "serve": "static-server",
+    "app": "npm run copy && npm run sass && npm run serve"
+  },
+  "keywords": [
+    "wheater",
+    "funambol"
+  ],
+  "author": "darrigo.g@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "copyfiles": "^1.0.0",
+    "node-sass": "^3.8.0",
+    "static-server": "^2.0.2"
+  }
+}

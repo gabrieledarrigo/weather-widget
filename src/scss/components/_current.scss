@@ -1,0 +1,79 @@
+.current {
+    background-color: $white;
+    border: 1px solid $gray_300;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    position: relative;
+    width: 90%;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    &__city {
+        font-weight: $font-weight-medium;
+        margin: 0;
+    }
+
+    &__time {
+        font-weight: $font-weight-light;
+        margin: 0 0.2rem;
+    }
+
+    &__temperature {
+        font-size: 4rem;
+        margin: 1rem;
+
+        > .icon {
+            color: $gray_900;
+        }
+
+        > .metric {
+            font-size: 2rem;
+            font-weight: $font-weight-medium;
+            vertical-align: top;
+        }
+    }
+
+    &__weather {
+        &__title {
+            font-weight: $font-weight-light;
+            margin-bottom: 0;
+        }
+
+        &__label {
+            padding: 0 0.2rem 0 0;
+            vertical-align: middle;
+        }
+
+        &__conditions {
+            font-size: 1.2rem;
+            vertical-align: middle;
+
+            &:after {
+                content: ", ";
+            }
+
+            &:last-child {
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    &__stats {
+        @media only screen and (min-width: 768px) {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            width: 40%;
+        }
+
+        &__title {
+            font-size: $font-weight-light;
+        }
+    }
+}

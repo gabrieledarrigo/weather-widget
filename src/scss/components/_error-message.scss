@@ -1,0 +1,19 @@
+.error-message {
+    text-align: center;
+
+    &__picture {
+        font-size: 8rem;
+        line-height: 8rem;
+        margin: 1rem 0 0;
+
+        > .owf {
+            vertical-align: bottom;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: $font-weight-light;
+        margin: 0;
+    }
+}

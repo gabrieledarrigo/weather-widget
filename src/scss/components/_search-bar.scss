@@ -1,0 +1,48 @@
+.search-bar {
+    display: flex;
+    margin: 1.5rem auto;
+    text-align: center;
+    width: 90%;
+
+    @media only screen and (min-width: 1024px) {
+        display: block;
+        margin: 2rem auto;
+        width: 60%;
+    }
+
+    &__input {
+        border: 1px solid $gray_300;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        height: 42.5px;
+        padding: 0 5px;
+        transition: all 0.1s;
+        width: 100%;
+
+        @media only screen and (min-width: 1024px) {
+            width: 375px;
+        }
+
+        &:active,
+        &:hover {
+            border: 1px solid $gray_400;
+        }
+    }
+
+    &__control {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: $blue_500;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        border: none;
+        color: $white;
+        height: 42.5px;
+        margin: 0 0 0 5px;
+        padding: 2.5px 10px;
+        text-transform: uppercase;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $blue_400;
+        }
+    }
+}
